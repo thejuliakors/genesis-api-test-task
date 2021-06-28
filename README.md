@@ -30,7 +30,9 @@ Register new user with email and password. Email must be unique and valid.
 ```
 /user/login
 ```
-Sign in with previously registered user by email and password combination.
+Sign in with previously registered user by email and password combination. 
+
+⚠️ In case of successful login, you'll receive a JWT token, which should be used as a value of Authorization header for the next route.
 ```
 /btcRate
 ```
