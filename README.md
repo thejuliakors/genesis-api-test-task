@@ -3,7 +3,14 @@
 
 Web API для сервісу, який дозволить зареєструвати та аутентифікувати користувача, а для аутентифікованих користувачів дізнатись поточний курс біткоіну (BTC) у гривні (UAH)
 
-## Instalation
+## Versions
+node: v10.19.0
+
+npm: 7.19.0
+
+Other packages' versions specified in package.json file.
+
+## Installation
 ```
 https://github.com/thejuliakors/simpleAPITestTask.git
 ```
