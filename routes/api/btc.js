@@ -1,18 +1,17 @@
-const router = require("express").Router();
-const btcService = require("../../services/btc");
-const protectByAuth = require("../authChecker");
+const router = require('express').Router()
+const btcService = require('../../services/btc')
+const protectByAuth = require('../authChecker')
 
 // Retrieve current BTC-UAH rate
-router.get("/btcRate", protectByAuth, (req, res) => {
+router.get('/btcRate', protectByAuth, (req, res) => {
   btcService.getCurrentRate((err, currentRate) => {
     if (err) {
       return res.status(500).json({
-        error: err,
-      });
+        error: err
+      })
     }
-    res.json(currentRate);
-  });
-  
-});
+    res.json(currentRate)
+  })
+})
 
-module.exports = router;
+module.exports = router
