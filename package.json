@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "JWT_KEY='secret' nodemon server.js"
+    "start": "JWT_KEY='secret' nodemon server.js",
+    "lint": "eslint .  --ext .js",
+    "lint-fix": "eslint --fix .  --ext .js"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,11 @@
     "underscore": "^1.13.1"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
     "nodemon": "^2.0.7"
   }
 }
